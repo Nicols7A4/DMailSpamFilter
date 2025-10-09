@@ -1,0 +1,9 @@
+Flask==3.0.3
+Flask-Login==0.6.3
+Flask-SQLAlchemy==3.1.1
+pgmpy==0.1.26
+passlib[bcrypt]==1.7.4
+PyMySQL==1.1.1
+SQLAlchemy==2.0.35
+alembic==1.13.2
+python-dotenv==1.0.1
