@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo Experto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong><a href="/">Correo Experto</a></strong></li>
+        </ul>
+        <ul>
+            {% if 'user_id' in session %}
+            <li><a href="{{ url_for('bandeja') }}">Bandeja</a></li>
+            <li><a href="{{ url_for('redactar') }}">Redactar</a></li>
+            <li><a href="{{ url_for('logout') }}">Cerrar Sesión ({{ session['email'] }})</a></li>
+            {% else %}
+            <li><a href="{{ url_for('login') }}">Iniciar Sesión</a></li>
+            <li><a href="{{ url_for('registro') }}">Registro</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <main class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <article class="message {{ category }}">
+            <div class="message-body">{{ message }}</div>
+        </article>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+</body>
+
+</html>

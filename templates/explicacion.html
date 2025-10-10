@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Análisis de SPAM</h2>
+<p><strong>Asunto del correo:</strong> {{ asunto }}</p>
+
+<article>
+    <p>
+        El sistema experto analiza varias características del correo. Cada una "empuja" la probabilidad hacia SPAM
+        (valores positivos) o hacia correo LEGÍTIMO (valores negativos). Aquí están las más influyentes para este
+        correo:
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Característica Analizada</th>
+                <th>Valor Encontrado</th>
+                <th>Impacto (Log-Likelihood Ratio)</th>
+                <th>Tendencia</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in reporte %}
+            <tr>
+                <td>{{ item.variable.replace('_', ' ')|title }}</td>
+                <td>{{ 'Sí' if item.valor == 1 else ('No' if item.valor == 0 else item.valor) }}</td>
+                <td>{{ "%.2f"|format(item.log_lr) }}</td>
+                <td>{{ '🔴 Hacia SPAM' if item.log_lr > 0 else '🟢 Hacia LEGÍTIMO' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <footer>
+        <a href="{{ url_for('bandeja') }}" role="button">Volver a la Bandeja</a>
+    </footer>
+</article>
+{% endblock %}

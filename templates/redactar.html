@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Redactar Nuevo Correo</h2>
+
+<form method="POST" action="{{ url_for('redactar') }}">
+
+    <label for="destinatario">Para:</label>
+    <input type="email" name="destinatario" placeholder="email@ejemplo.com" required>
+
+    <label for="asunto">Asunto:</label>
+    <input type="text" name="asunto" required>
+
+    <label for="cuerpo">Mensaje:</label>
+    <textarea name="cuerpo" rows="10" required></textarea>
+
+    <button type="submit">Enviar Correo</button>
+</form>
+{% endblock %}

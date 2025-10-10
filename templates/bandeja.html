@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Bandeja</h2>
+
+<div class="tabs">
+    <a href="#" data-tab="normal" class="tab-link active">Bandeja de Entrada ({{ correos_normales|length }})</a>
+    <a href="#" data-tab="spam" class="tab-link">Spam ({{ correos_spam|length }})</a>
+    <a href="#" data-tab="enviados" class="tab-link">Enviados ({{ correos_enviados|length }})</a>
+</div>
+
+<div id="normal" class="tab-content active">
+    {% if correos_normales %}
+    <table>
+        <thead>
+            <tr>
+                <th>De</th>
+                <th>Asunto</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for correo in correos_normales %}
+            <tr>
+                <td>{{ correo.remitente_email }}</td>
+                <td><a href="{{ url_for('ver_correo', correo_id=correo.id) }}">{{ correo.asunto }}</a></td>
+                <td>{{ correo.fecha_envio.strftime('%d/%m/%Y %H:%M') }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No tienes correos en tu bandeja de entrada.</p>
+    {% endif %}
+</div>
+
+<div id="spam" class="tab-content" style="display:none;">
+    {% if correos_spam %}
+    <table>
+        <thead>
+            <tr>
+                <th>De</th>
+                <th>Asunto</th>
+                <th>Fecha</th>
+                <th>Análisis</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for correo in correos_spam %}
+            <tr>
+                <td>{{ correo.remitente_email }}</td>
+                <td><a href="{{ url_for('ver_correo', correo_id=correo.id) }}">{{ correo.asunto }}</a></td>
+                <td>{{ correo.fecha_envio.strftime('%d/%m/%Y %H:%M') }}</td>
+                <td><a href="{{ url_for('explicacion', correo_id=correo.id) }}" role="button" class="secondary">Ver
+                        Explicación</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No tienes correos en la carpeta de spam.</p>
+    {% endif %}
+</div>
+
+<div id="enviados" class="tab-content" style="display:none;">
+    {% if correos_enviados %}
+    <table>
+        <thead>
+            <tr>
+                <th>Para</th>
+                <th>Asunto</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for correo in correos_enviados %}
+            <tr>
+                <td>{{ correo.destinatario_email }}</td>
+                <td><a href="{{ url_for('ver_correo', correo_id=correo.id) }}">{{ correo.asunto }}</a></td>
+                <td>{{ correo.fecha_envio.strftime('%d/%m/%Y %H:%M') }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No has enviado ningún correo.</p>
+    {% endif %}
+</div>
+
+<script>
+    document.querySelectorAll('.tab-link').forEach(button => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            const tabId = button.dataset.tab;
+            document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
+            document.querySelectorAll('.tab-link').forEach(link => link.classList.remove('active'));
+            document.getElementById(tabId).style.display = 'block';
+            button.classList.add('active');
+        });
+    });
+</script>
+<style>
+    .tabs {
+        margin-bottom: 1.5rem;
+    }
+
+    .tab-link {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+    }
+
+    .tab-link.active {
+        border-bottom-color: var(--primary);
+        font-weight: bold;
+    }
+</style>
+{% endblock %}

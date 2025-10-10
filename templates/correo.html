@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<article>
+    <header>
+        <h2>Asunto: {{ correo.asunto }}</h2>
+    </header>
+    <p><strong>De:</strong> {{ correo.remitente_email }}</p>
+    <p><strong>Para:</strong> {{ correo.destinatario_email }}</p>
+    <p><strong>Fecha:</strong> {{ correo.fecha_envio.strftime('%d/%m/%Y %H:%M') }}</p>
+    <hr>
+    <div>
+        <pre style="white-space: pre-wrap; font-family: inherit;">{{ correo.cuerpo }}</pre>
+    </div>
+    <br>
+    <footer>
+        <a href="{{ url_for('bandeja') }}" role="button">Volver a Bandejas</a>
+    </footer>
+</article>
+{% endblock %}
