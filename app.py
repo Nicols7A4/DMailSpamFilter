@@ -1,17 +1,12 @@
-# app.py
 from flask import Flask, render_template, request, redirect, url_for, flash, session
-import pymysql
-from sistema_experto.filtro import analizar_correo
-import json # Para convertir el reporte a formato JSON
-# Importa la función para conectar a la BD
 from conexion import obtener_conexion
+import json
+from sistema_experto.filtro import analizar_correo
 
 app = Flask(__name__)
 
-# Clave secreta para la sesión (muy importante para la seguridad)
 app.secret_key = 'tu_clave_secreta_muy_dificil' 
 
-# Ruta principal que redirige al login si no hay sesión
 @app.route('/')
 def home():
     if 'user_id' in session:
@@ -55,9 +50,7 @@ def login():
                 cursor.execute("SELECT * FROM usuarios WHERE email = %s", (email,))
                 usuario = cursor.fetchone()
                 
-                # Comparamos la contraseña directamente (texto plano)
                 if usuario and password == usuario['password']:
-                    # Si el usuario existe y la contraseña es correcta, guardar en sesión
                     session['user_id'] = usuario['id']
                     session['email'] = usuario['email']
                     return redirect(url_for('bandeja'))
@@ -69,15 +62,15 @@ def login():
             
     return render_template('login.html')
 
+
 @app.route('/logout')
 def logout():
-    # Eliminar datos de la sesión
     session.pop('user_id', None)
     session.pop('email', None)
     flash("Has cerrado sesión.", "success")
     return redirect(url_for('login'))
 
-# --- Rutas de la Aplicación (esqueleto) ---
+# --- Rutas de la Aplicación ---
 
 @app.route('/bandeja')
 def bandeja():
