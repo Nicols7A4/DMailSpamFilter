@@ -1,7 +1,9 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 from conexion import obtener_conexion
 import json
-from sistema_experto.filtro import analizar_correo
+# from sistema_experto.filtro import analizar_correo
+from sistema_experto import analizar_correo
+import json
 
 app = Flask(__name__)
 
@@ -132,12 +134,11 @@ def redactar():
         asunto = request.form['asunto']
         cuerpo = request.form['cuerpo']
         remitente_id = session['user_id']
-        remitente_email = session['email'] # Necesitamos el email del remitente para el análisis
+        remitente_email = session['email']
 
         conexion = obtener_conexion()
         try:
             with conexion.cursor() as cursor:
-                # 1. Buscar el ID del destinatario
                 cursor.execute("SELECT id FROM usuarios WHERE email = %s", (destinatario_email,))
                 destinatario = cursor.fetchone()
 
@@ -147,24 +148,22 @@ def redactar():
 
                 destinatario_id = destinatario['id']
                 
-                # --- ¡AQUÍ OCURRE LA MAGIA! ---
-                # 2. Llamar al sistema experto para analizar el correo ANTES de guardarlo
-                resultado_analisis = analizar_correo(
-                    asunto=asunto,
-                    cuerpo=cuerpo,
-                    remitente_email=remitente_email
-                )
+                # 1. Llamar al sistema experto
+                resultado_analisis = analizar_correo(asunto, cuerpo, remitente_email)
                 
-                # 3. Extraer los resultados del análisis
+                # 2. Extraer todos los resultados del análisis
                 es_spam = resultado_analisis['es_spam']
+                prob_spam = resultado_analisis['probabilidad_spam'] # <-- DATO NUEVO
                 explicacion_reporte = resultado_analisis['reporte']
-                
-                # Convertimos el reporte (lista de diccionarios) a un string JSON para guardarlo en la BD
                 explicacion_json_str = json.dumps(explicacion_reporte)
 
-                # 4. Insertar el correo en la base de datos CON LOS RESULTADOS DEL ANÁLISIS
-                sql = "INSERT INTO correos (remitente_id, destinatario_id, asunto, cuerpo, es_spam, explicacion_json) VALUES (%s, %s, %s, %s, %s, %s)"
-                cursor.execute(sql, (remitente_id, destinatario_id, asunto, cuerpo, es_spam, explicacion_json_str))
+                # 3. Guardar el correo CON LA PROBABILIDAD
+                sql = """
+                    INSERT INTO correos 
+                    (remitente_id, destinatario_id, asunto, cuerpo, es_spam, explicacion_json, probabilidad_spam) 
+                    VALUES (%s, %s, %s, %s, %s, %s, %s)
+                """
+                cursor.execute(sql, (remitente_id, destinatario_id, asunto, cuerpo, es_spam, explicacion_json_str, prob_spam))
             
             conexion.commit()
             flash("Correo enviado y analizado exitosamente.", "success")
@@ -184,10 +183,9 @@ def ver_correo(correo_id):
     conexion = obtener_conexion()
     try:
         with conexion.cursor() as cursor:
-            # --- LÓGICA MODIFICADA ---
-            # Ahora permite ver el correo si el usuario es el remitente O el destinatario
+            # Consulta que trae toda la info del correo
             sql = """
-                SELECT c.asunto, c.cuerpo, c.fecha_envio, u_remitente.email AS remitente_email, u_destinatario.email AS destinatario_email
+                SELECT c.*, u_remitente.email AS remitente_email, u_destinatario.email AS destinatario_email
                 FROM correos c
                 JOIN usuarios u_remitente ON c.remitente_id = u_remitente.id
                 JOIN usuarios u_destinatario ON c.destinatario_id = u_destinatario.id
@@ -199,12 +197,14 @@ def ver_correo(correo_id):
             if not correo:
                 flash("Correo no encontrado o no tienes permiso para verlo.", "error")
                 return redirect(url_for('bandeja'))
+            
+            # Cargamos el reporte JSON para pasarlo a la plantilla
+            reporte = json.loads(correo['explicacion_json']) if correo['explicacion_json'] else None
+
     finally:
         conexion.close()
 
-    # Pasamos el user_id a la plantilla para saber si somos el remitente
-    return render_template('correo.html', correo=correo, current_user_id=user_id)
-
+    return render_template('correo.html', correo=correo, reporte=reporte)
 
 @app.route('/explicacion/<int:correo_id>')
 def explicacion(correo_id):
@@ -231,6 +231,141 @@ def explicacion(correo_id):
         conexion.close()
     
     return render_template('explicacion.html', reporte=reporte, asunto=asunto)
+
+
+
+
+
+# =====================================================================
+# API PARA PRUEBAS RÁPIDAS
+# =====================================================================
+
+@app.route('/api/analizar', methods=['POST'])
+def api_analizar_correos():
+    """
+    Endpoint para analizar una lista de correos en batch.
+    Espera un JSON con la clave "correos", que es una lista de objetos.
+    Cada objeto debe tener: "asunto", "cuerpo", "remitente".
+    """
+    datos = request.get_json()
+    if not datos or 'correos' not in datos:
+        return jsonify({"error": "Formato de JSON inválido. Se esperaba una clave 'correos'."}), 400
+
+    resultados = []
+    for correo in datos['correos']:
+        asunto = correo.get('asunto', '')
+        cuerpo = correo.get('cuerpo', '')
+        remitente = correo.get('remitente', 'desconocido@test.com')
+        
+        # Llama a nuestro sistema experto
+        analisis = analizar_correo(asunto, cuerpo, remitente)
+        resultados.append(analisis)
+        
+    return jsonify(resultados)
+
+
+@app.route('/api/registrar', methods=['POST'])
+def api_registrar_y_analizar_correos():
+    """
+    Endpoint que analiza una lista de correos Y LOS GUARDA en la base de datos.
+    Espera un JSON con "correos". Cada correo debe tener:
+    "asunto", "cuerpo", "remitente_email", "destinatario_email".
+    """
+    datos = request.get_json()
+    if not datos or 'correos' not in datos:
+        return jsonify({"error": "Formato de JSON inválido."}), 400
+
+    correos_a_procesar = datos['correos']
+    conexion = obtener_conexion()
+    try:
+        with conexion.cursor() as cursor:
+            for correo in correos_a_procesar:
+                remitente_email = correo.get('remitente_email')
+                destinatario_email = correo.get('destinatario_email')
+                asunto = correo.get('asunto', '')
+                cuerpo = correo.get('cuerpo', '')
+
+                # --- 1. Validar que los usuarios existan y obtener sus IDs ---
+                cursor.execute("SELECT id FROM usuarios WHERE email = %s", (remitente_email,))
+                remitente_user = cursor.fetchone()
+                cursor.execute("SELECT id FROM usuarios WHERE email = %s", (destinatario_email,))
+                destinatario_user = cursor.fetchone()
+
+                if not remitente_user or not destinatario_user:
+                    # Si un usuario no existe, saltamos este correo y continuamos con el siguiente
+                    print(f"ADVERTENCIA: No se pudo registrar el correo de {remitente_email} a {destinatario_email} porque uno de los usuarios no existe.")
+                    continue
+                
+                remitente_id = remitente_user['id']
+                destinatario_id = destinatario_user['id']
+                
+                # --- 2. Llamar al sistema experto para el análisis ---
+                analisis = analizar_correo(asunto, cuerpo, remitente_email)
+                
+                # --- 3. Guardar el correo en la BD con los resultados ---
+                sql = """
+                    INSERT INTO correos 
+                    (remitente_id, destinatario_id, asunto, cuerpo, es_spam, explicacion_json, probabilidad_spam) 
+                    VALUES (%s, %s, %s, %s, %s, %s, %s)
+                """
+                cursor.execute(sql, (
+                    remitente_id,
+                    destinatario_id,
+                    asunto,
+                    cuerpo,
+                    analisis['es_spam'],
+                    json.dumps(analisis['reporte']),
+                    analisis['probabilidad_spam']
+                ))
+
+        conexion.commit()
+        return jsonify({"mensaje": f"{len(correos_a_procesar)} correos procesados y registrados exitosamente."}), 201
+    
+    except Exception as e:
+        conexion.rollback()
+        return jsonify({"error": f"Ocurrió un error en la base de datos: {str(e)}"}), 500
+    finally:
+        conexion.close()
+
+
+@app.route('/api/correos', methods=['GET'])
+def api_obtener_correos():
+    """
+    Endpoint para obtener los correos ya guardados en la base de datos.
+    Acepta un parámetro de consulta `filtro`.
+    Valores posibles para ?filtro= : 'spam', 'nospam', 'todos' (defecto)
+    """
+    filtro = request.args.get('filtro', 'todos').lower()
+    
+    conexion = obtener_conexion()
+    try:
+        with conexion.cursor() as cursor:
+            # Construimos la consulta base
+            sql = "SELECT id, asunto, cuerpo, es_spam, probabilidad_spam, fecha_envio FROM correos"
+            
+            # Añadimos el filtro si es necesario
+            if filtro == 'spam':
+                sql += " WHERE es_spam = 1"
+            elif filtro == 'nospam':
+                sql += " WHERE es_spam = 0"
+            
+            sql += " ORDER BY fecha_envio DESC"
+            
+            cursor.execute(sql)
+            correos_db = cursor.fetchall()
+            
+            # Convertimos los resultados a un formato compatible con JSON
+            # (las fechas deben ser convertidas a string)
+            correos_json = []
+            for correo in correos_db:
+                correo['fecha_envio'] = correo['fecha_envio'].isoformat()
+                correos_json.append(correo)
+                
+            return jsonify(correos_json)
+    finally:
+        conexion.close()
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

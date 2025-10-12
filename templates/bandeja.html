@@ -16,6 +16,7 @@
                 <th>De</th>
                 <th>Asunto</th>
                 <th>Fecha</th>
+                <th>Análisis</th>
             </tr>
         </thead>
         <tbody>
@@ -24,6 +25,10 @@
                 <td>{{ correo.remitente_email }}</td>
                 <td><a href="{{ url_for('ver_correo', correo_id=correo.id) }}">{{ correo.asunto }}</a></td>
                 <td>{{ correo.fecha_envio.strftime('%d/%m/%Y %H:%M') }}</td>
+                <td>
+                    <a href="{{ url_for('ver_correo', correo_id=correo.id) }}" role="button" class="secondary">Ver
+                        Análisis</a>
+                </td>
             </tr>
             {% endfor %}
         </tbody>
@@ -50,8 +55,10 @@
                 <td>{{ correo.remitente_email }}</td>
                 <td><a href="{{ url_for('ver_correo', correo_id=correo.id) }}">{{ correo.asunto }}</a></td>
                 <td>{{ correo.fecha_envio.strftime('%d/%m/%Y %H:%M') }}</td>
-                <td><a href="{{ url_for('explicacion', correo_id=correo.id) }}" role="button" class="secondary">Ver
-                        Explicación</a></td>
+                <td><a href="{{ url_for('ver_correo', correo_id=correo.id) }}" role="button" class="secondary">Ver
+                        Análisis</a>
+                </td>
+
             </tr>
             {% endfor %}
         </tbody>

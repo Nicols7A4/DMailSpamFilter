@@ -11,9 +11,52 @@
     <div>
         <pre style="white-space: pre-wrap; font-family: inherit;">{{ correo.cuerpo }}</pre>
     </div>
-    <br>
-    <footer>
-        <a href="{{ url_for('bandeja') }}" role="button">Volver a Bandejas</a>
-    </footer>
 </article>
+
+{% if reporte %}
+<article>
+    <header>
+        <h3>Análisis del Sistema Experto</h3>
+    </header>
+
+    <h4>
+        Probabilidad de ser SPAM:
+        <strong style="color: {{ '#d32f2f' if correo.es_spam else '#388e3c' }};">
+            {#-- Solo muestra el porcentaje si el valor no es nulo --#}
+            {% if correo.probabilidad_spam is not none %}
+            {{ "%.2f"|format(correo.probabilidad_spam * 100) }}%
+            {% else %}
+            No disponible
+            {% endif %}
+        </strong>
+    </h4>
+    <p>El sistema analiza varias características. Aquí están las más influyentes para este correo, mostrando cómo cada
+        una inclinó la balanza.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Característica Analizada</th>
+                <th>Valor Encontrado</th>
+                <th>Impacto (Log-Likelihood Ratio)</th>
+                <th>Tendencia</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in reporte %}
+            <tr>
+                <td>{{ item.variable.replace('_', ' ')|title }}</td>
+                <td>{{ 'Sí' if item.valor == 1 else ('No' if item.valor == 0 else item.valor) }}</td>
+                <td>{{ "%.2f"|format(item.log_lr) }}</td>
+                <td>{{ '🔴 Hacia SPAM' if item.log_lr > 0 else '🟢 Hacia LEGÍTIMO' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</article>
+{% endif %}
+
+<footer>
+    <a href="{{ url_for('bandeja') }}" role="button">Volver a Bandejas</a>
+</footer>
 {% endblock %}
