@@ -1,0 +1,423 @@
+/* ==========================================================================
+   00. CONFIGURACIÓN Y VARIABLES GLOBALES (Design System)
+   ========================================================================== */
+
+:root {
+    /* Paleta de Colores Principal (Dark Theme Sofisticado) */
+    --color-background: #0D1117; /* Fondo principal, azul muy oscuro */
+    --color-surface: #161B22;   /* Superficies de tarjetas, formularios, etc. */
+    --color-surface-light: #21262d; /* Hover para superficies */
+    --color-border: #30363d;    /* Bordes sutiles */
+    --color-border-hover: #8b949e; /* Borde al hacer focus */
+
+    /* Colores de Acento y Estado */
+    --color-primary: #3B82F6;       /* Azul vibrante para acciones principales */
+    --color-primary-hover: #60A5FA; /* Versión más clara del azul */
+    --color-success: #28a745;       /* Verde para éxito y correos legítimos */
+    --color-danger: #dc3545;        /* Rojo para peligro y SPAM */
+    --color-warning: #ffc107;
+
+    /* Tipografía */
+    --color-text-primary: #E6EDF3;   /* Texto principal, casi blanco */
+    --color-text-secondary: #8B949E; /* Texto secundario, gris claro */
+    --color-text-link: var(--color-primary);
+    
+    --font-family-base: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    /* Sistema de Espaciado */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+
+    /* Otros */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --transition-duration: 0.2s;
+    --box-shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --box-shadow-focus: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* ==========================================================================
+   01. ESTILOS BASE Y RESETEO
+   ========================================================================== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   02. DISEÑO Y CONTENEDORES
+   ========================================================================== */
+
+main.container {
+    max-width: 1280px;
+    margin: var(--spacing-xxl) auto;
+    padding: 0 var(--spacing-lg);
+}
+
+/* ==========================================================================
+   03. COMPONENTES
+   ========================================================================== */
+
+/* --- Barra de Navegación --- */
+nav.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-xxl);
+    background-color: rgba(22, 27, 34, 0.8);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    position: relative;
+    padding: var(--spacing-sm) 0;
+    transition: color var(--transition-duration) ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--transition-duration) ease-out;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--color-text-primary);
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav strong a {
+    color: var(--color-text-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav strong a:hover::after {
+    transform: scaleX(0);
+}
+
+/* --- Títulos --- */
+h2, h3 {
+    margin-bottom: var(--spacing-lg);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* --- Formularios --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    background-color: var(--color-surface);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--color-border);
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    padding: 12px 16px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-border-hover);
+    box-shadow: var(--box-shadow-focus);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+/* --- Botones --- */
+button,
+a[role="button"] {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-md);
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all var(--transition-duration) ease;
+}
+
+button[type="submit"],
+a[role="button"] {
+    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-hover));
+    color: #ffffff;
+    box-shadow: var(--box-shadow-soft);
+}
+
+button[type="submit"]:hover,
+a[role="button"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.2), 0 3px 7px -3px rgba(0, 0, 0, 0.15);
+}
+
+a[role="button"].secondary {
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border);
+}
+
+a[role="button"].secondary:hover {
+    background-color: var(--color-surface-light);
+    border-color: var(--color-border-hover);
+    color: var(--color-text-primary);
+}
+
+
+/* --- Tabs de la Bandeja --- */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--spacing-lg);
+}
+
+.tab-link {
+    padding: var(--spacing-md);
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    border-bottom: 3px solid transparent;
+    transition: color var(--transition-duration), border-color var(--transition-duration);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.tab-link:hover {
+    color: var(--color-text-primary);
+}
+
+.tab-link.active {
+    color: var(--color-text-primary);
+    border-bottom-color: var(--color-primary);
+    font-weight: 600;
+}
+
+.tab-content {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+}
+
+/* --- Tablas --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: left;
+    white-space: nowrap;
+}
+
+thead {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+th {
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color var(--transition-duration);
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+tbody tr:nth-child(1) { animation-delay: 0.1s; }
+tbody tr:nth-child(2) { animation-delay: 0.15s; }
+tbody tr:nth-child(3) { animation-delay: 0.2s; }
+tbody tr:nth-child(4) { animation-delay: 0.25s; }
+tbody tr:nth-child(5) { animation-delay: 0.3s; }
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: var(--color-surface-light);
+}
+
+td a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+/* --- Vista de Correo y Análisis --- */
+article {
+    background-color: var(--color-surface);
+    padding: var(--spacing-xl);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+article hr {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: var(--spacing-lg) 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: inherit;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+}
+
+/* --- Clases de Utilidad para Análisis --- */
+.text-danger {
+    color: var(--color-danger);
+    font-weight: 600;
+}
+
+.text-success {
+    color: var(--color-success);
+    font-weight: 600;
+}
+
+/* --- Mensajes Flash --- */
+.message {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    border: 1px solid transparent;
+    background-color: var(--color-surface);
+}
+.message.success {
+    border-color: var(--color-success);
+    color: var(--color-success);
+}
+.message.error {
+    border-color: var(--color-danger);
+    color: var(--color-danger);
+}
+
+
+/* ==========================================================================
+   04. ANIMACIONES
+   ========================================================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==========================================================================
+   05. RESPONSIVIDAD
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    nav.container-fluid {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    nav.container-fluid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
+
+    .tab-content {
+        overflow-x: auto; /* Permite scroll horizontal en tablas */
+    }
+
+    main.container {
+        margin-top: var(--spacing-xl);
+        margin-bottom: var(--spacing-xl);
+    }
+}
