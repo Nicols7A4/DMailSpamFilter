@@ -1,45 +1,48 @@
 # sistema_experto/__init__.py
-from pgmpy.inference import VariableElimination
+"""
+Paquete sistema_experto reorganizado para mayor claridad.
 
-# Importamos los componentes de nuestros módulos
-from .base_conocimiento import construir_modelo_bayesiano, UMBRAL_SPAM
+Componentes:
+- base_conocimiento: estructura y CPDs del modelo
+- adquisicion_conocimiento: extracción de evidencias desde texto
+- modulo_explicacion: generación de reportes interpretables
+- motor_inferencia: inicialización y consulta del motor (pgmpy)
+
+La función pública `analizar_correo` conserva exactamente la misma
+firma y formato de salida que antes para mantener compatibilidad con
+el resto de la aplicación.
+"""
+
+from .base_conocimiento import UMBRAL_SPAM
 from .adquisicion_conocimiento import extraer_evidencias
 from .modulo_explicacion import generar_explicacion
-
-# --- INICIALIZACIÓN DEL SISTEMA EXPERTO ---
-
-# 1. Cargar la Base de Conocimiento
-MODELO = construir_modelo_bayesiano()
-
-# 2. Inicializar el Motor de Inferencia
-MOTOR_INFERENCIA = VariableElimination(MODELO)
+from .motor_inferencia import inferir_probabilidad_spam, MODELO
 
 print("✅ Sistema Experto cargado y listo (Base de Conocimiento + Motor de Inferencia).")
 
 
-# --- INTERFAZ DE USUARIO DEL SISTEMA ---
-
 def analizar_correo(asunto, cuerpo, remitente_email):
     """
-    Función pública que actúa como interfaz principal para el sistema experto.
-    Orquesta el uso de los diferentes módulos.
+    Interfaz pública. Recibe asunto, cuerpo y remitente. Devuelve:
+
+    {
+      "probabilidad_spam": float,
+      "es_spam": bool,
+      "reporte": list,   # salida de generar_explicacion
+      "evidencias": dict # salida de extraer_evidencias
+    }
     """
-    # 1. Módulo de Adquisición: Obtener evidencias del correo
     evidencias = extraer_evidencias(texto=cuerpo, asunto=asunto, remitente=remitente_email)
-    
-    # 2. Motor de Inferencia: Calcular la probabilidad de spam
-    prob_spam = float(MOTOR_INFERENCIA.query(variables=["correo_es_spam"], evidence=evidencias).values[1])
-    
-    # 3. Clasificar usando una regla de la Base de Conocimiento
+
+    prob_spam = inferir_probabilidad_spam(evidencias)
     es_spam_predicho = prob_spam >= UMBRAL_SPAM
-    
-    # 4. Módulo de Explicación: Generar el reporte
+
+    # mantenemos la explicación existente
     explicacion = generar_explicacion(MODELO, evidencias)
-    
-    # 5. Devolver un resultado estructurado
+
     return {
-        "probabilidad_spam": prob_spam,
-        "es_spam": es_spam_predicho,
+        "probabilidad_spam": float(prob_spam),
+        "es_spam": bool(es_spam_predicho),
         "reporte": explicacion,
         "evidencias": evidencias
     }
