@@ -1,0 +1,4252 @@
+[
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 1,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 1,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.09086057553663233,
+    "reporte": [
+      {
+        "log_lr": 1.1249387366083,
+        "lr": 13.333333333333334,
+        "valor": 1,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      },
+      {
+        "log_lr": 0.0,
+        "lr": 1.0,
+        "valor": 1,
+        "variable": "link_count"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 1,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.016840649075679733,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": 0.6989700043360189,
+        "lr": 5.0,
+        "valor": 1,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": true,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 1,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.6715577573492633,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      },
+      {
+        "log_lr": 0.0,
+        "lr": 1.0,
+        "valor": 1,
+        "variable": "link_count"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": true,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 1,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.7285291238423999,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.3010299956639812,
+        "lr": 2.0,
+        "valor": 1,
+        "variable": "subject_largo"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      }
+    ]
+  },
+  {
+    "es_spam": true,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 1,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.9625606974928717,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": 1.1249387366083,
+        "lr": 13.333333333333334,
+        "valor": 1,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 1,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.1694675128152539,
+    "reporte": [
+      {
+        "log_lr": 1.3679767852945943,
+        "lr": 23.333333333333332,
+        "valor": 1,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.5439469350431452,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.5439469350431452,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.5439469350431452,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": true,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 1,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.7285291238423999,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.3010299956639812,
+        "lr": 2.0,
+        "valor": 1,
+        "variable": "subject_largo"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": true,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 1,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 1,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.8147579579194741,
+    "reporte": [
+      {
+        "log_lr": 1.3679767852945943,
+        "lr": 23.333333333333332,
+        "valor": 1,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 1.1249387366083,
+        "lr": 13.333333333333334,
+        "valor": 1,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 1,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.006048535885347709,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.3010299956639812,
+        "lr": 2.0,
+        "valor": 1,
+        "variable": "subject_largo"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      }
+    ]
+  },
+  {
+    "es_spam": true,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 1,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.9890091347633858,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": 1.3679767852945943,
+        "lr": 23.333333333333332,
+        "valor": 1,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": true,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 1,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.8830948007535688,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": 0.6989700043360189,
+        "lr": 5.0,
+        "valor": 1,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.5439469350431452,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.5439469350431452,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 1,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.5439469350431452,
+    "reporte": [
+      {
+        "log_lr": 1.6532125137753437,
+        "lr": 45.0,
+        "valor": 1,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 1,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.1694675128152539,
+    "reporte": [
+      {
+        "log_lr": 1.3679767852945943,
+        "lr": 23.333333333333332,
+        "valor": 1,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 1,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.006048535885347709,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.3010299956639812,
+        "lr": 2.0,
+        "valor": 1,
+        "variable": "subject_largo"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  },
+  {
+    "es_spam": false,
+    "evidencias": {
+      "contiene_palabra_spam": 0,
+      "contiene_short_url": 0,
+      "contiene_simbolo_dinero": 0,
+      "dominio_gratis": 0,
+      "link_count": 0,
+      "mayusculas_excesivas": 0,
+      "muchas_exclamaciones": 0,
+      "remitente_desconocido": 1,
+      "subject_largo": 0,
+      "telefono_o_whatsapp": 0,
+      "terminos_crypto": 0
+    },
+    "probabilidad_spam": 0.0026973019087036545,
+    "reporte": [
+      {
+        "log_lr": -0.9912260756924949,
+        "lr": 0.10204081632653061,
+        "valor": 0,
+        "variable": "contiene_palabra_spam"
+      },
+      {
+        "log_lr": -0.5096504795465824,
+        "lr": 0.30927835051546393,
+        "valor": 0,
+        "variable": "contiene_simbolo_dinero"
+      },
+      {
+        "log_lr": 0.25527250510330607,
+        "lr": 1.8,
+        "valor": 1,
+        "variable": "remitente_desconocido"
+      },
+      {
+        "log_lr": -0.23408320603336796,
+        "lr": 0.5833333333333334,
+        "valor": 0,
+        "variable": "link_count"
+      },
+      {
+        "log_lr": -0.2218487496163564,
+        "lr": 0.6,
+        "valor": 0,
+        "variable": "dominio_gratis"
+      },
+      {
+        "log_lr": -0.21748394421390627,
+        "lr": 0.6060606060606061,
+        "valor": 0,
+        "variable": "terminos_crypto"
+      },
+      {
+        "log_lr": -0.2086204838826012,
+        "lr": 0.6185567010309279,
+        "valor": 0,
+        "variable": "telefono_o_whatsapp"
+      },
+      {
+        "log_lr": -0.146128035678238,
+        "lr": 0.7142857142857143,
+        "valor": 0,
+        "variable": "mayusculas_excesivas"
+      },
+      {
+        "log_lr": -0.10266234189714771,
+        "lr": 0.7894736842105263,
+        "valor": 0,
+        "variable": "muchas_exclamaciones"
+      },
+      {
+        "log_lr": -0.08813608870055126,
+        "lr": 0.8163265306122449,
+        "valor": 0,
+        "variable": "contiene_short_url"
+      },
+      {
+        "log_lr": -0.051152522447381256,
+        "lr": 0.888888888888889,
+        "valor": 0,
+        "variable": "subject_largo"
+      }
+    ]
+  }
+]

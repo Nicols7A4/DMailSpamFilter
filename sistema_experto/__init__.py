@@ -14,7 +14,7 @@ el resto de la aplicación.
 """
 
 from .base_conocimiento import UMBRAL_SPAM
-from .adquisicion_conocimiento import extraer_evidencias
+from .procesador_de_evidencias import extraer_evidencias
 from .modulo_explicacion import generar_explicacion
 from .motor_inferencia import inferir_probabilidad_spam, MODELO
 

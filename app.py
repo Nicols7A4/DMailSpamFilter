@@ -263,6 +263,31 @@ def api_analizar_correos():
         
     return jsonify(resultados)
 
+@app.route('/api/analizar/simple', methods=['POST'])
+def api_analizar_correos_simple():
+    """
+    Endpoint simplificado que analiza una lista de correos y devuelve
+    solo una lista de booleanos (true si es spam, false si no lo es).
+    """
+    datos = request.get_json()
+    if not datos or 'correos' not in datos:
+        return jsonify({"error": "Formato de JSON inválido. Se esperaba una clave 'correos'."}), 400
+
+    # Lista para guardar solo los resultados booleanos
+    resultados_simples = []
+    
+    for correo in datos['correos']:
+        asunto = correo.get('asunto', '')
+        cuerpo = correo.get('cuerpo', '')
+        remitente = correo.get('remitente', 'desconocido@test.com')
+        
+        # Llama a nuestro sistema experto
+        analisis = analizar_correo(asunto, cuerpo, remitente)
+        
+        # Añade solo el valor booleano de 'es_spam' a la lista
+        resultados_simples.append(analisis['es_spam'])
+        
+    return jsonify(resultados_simples)
 
 @app.route('/api/registrar', methods=['POST'])
 def api_registrar_y_analizar_correos():
