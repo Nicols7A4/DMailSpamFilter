@@ -76,7 +76,7 @@ def construir_modelo_bayesiano():
 #     # values = [[ P(Característica=NO | Correo=LEGÍTIMO), P(Característica=NO | Correo=SPAM) ],
 #     #           [ P(Característica=SÍ | Correo=LEGÍTIMO), P(Característica=SÍ | Correo=SPAM) ]]
     
-    # <--- Se mantiene un prior ligeramente elevado.
+    ###
     prior_spam = 0.47
     cpd_spam = TabularCPD("correo_es_spam", 2, [[1 - prior_spam], [prior_spam]])
 
@@ -85,7 +85,7 @@ def construir_modelo_bayesiano():
     cpd_words = TabularCPD("contiene_palabra_spam", 2, [[0.99, 0.10], [0.01, 0.90]], ["correo_es_spam"], [2])
 
     # <--- REGLA CLAVE: Fortalecemos significativamente la regla de enlaces.
-    # Tener 2+ enlaces es ahora un indicador muy fuerte de spam.
+    # Tener 2+ enlaces es un indicador muy fuerte de spam.
     cpd_linkcount = TabularCPD(
         "link_count", 3,
         values=[[0.70, 0.20],  # P(0 links | Legítimo/Spam)
@@ -93,17 +93,11 @@ def construir_modelo_bayesiano():
                 [0.05, 0.50]], # P(2+ links| Legítimo/Spam)
         evidence=["correo_es_spam"], evidence_card=[2]
     )
-
-    # Fortalecemos las reglas financieras y de remitente, que son fiables.
     cpd_money = TabularCPD("contiene_simbolo_dinero", 2, [[0.97, 0.30], [0.03, 0.70]], ["correo_es_spam"], [2])
     cpd_unknown = TabularCPD("remitente_desconocido", 2, [[0.60, 0.05], [0.40, 0.95]], ["correo_es_spam"], [2])
-    
-    # Mantenemos las reglas de apoyo con valores probados.
     cpd_phone = TabularCPD("telefono_o_whatsapp", 2, [[0.97, 0.60], [0.03, 0.40]], ["correo_es_spam"], [2])
     cpd_crypto = TabularCPD("terminos_crypto", 2, [[0.99, 0.50], [0.01, 0.50]], ["correo_es_spam"], [2])
     cpd_free = TabularCPD("dominio_gratis", 2, [[0.75, 0.45], [0.25, 0.55]], ["correo_es_spam"], [2])
-    
-    # Mantenemos las penalizaciones por ausencia reducidas para evitar falsos positivos.
     cpd_caps = TabularCPD("mayusculas_excesivas", 2, [[0.98, 0.70], [0.02, 0.30]], ["correo_es_spam"], [2])
     cpd_short = TabularCPD("contiene_short_url", 2, [[0.98, 0.80], [0.02, 0.20]], ["correo_es_spam"], [2])
     cpd_excl = TabularCPD("muchas_exclamaciones", 2, [[0.95, 0.75], [0.05, 0.25]], ["correo_es_spam"], [2])
@@ -115,6 +109,8 @@ def construir_modelo_bayesiano():
     )
     
     return model
+
+
 
 # def construir_modelo_bayesiano():
 #     """

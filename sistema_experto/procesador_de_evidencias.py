@@ -1,4 +1,4 @@
-# sistema_experto/adquisicion_conocimiento.py
+# sistema_experto/procesador_de_evidencias.py
 import re
 from .base_conocimiento import SPAM_WORDS, SHORT_URL_PATTERNS, PHONE_PATTERNS, CRYPTO_PATTERNS, CONTACTOS_CONOCIDOS, DOMINIOS_GRATIS
 
