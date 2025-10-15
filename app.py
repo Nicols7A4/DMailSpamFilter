@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 from conexion import obtener_conexion
 import json
+from datetime import datetime
+
 # from sistema_experto.filtro import analizar_correo
 from sistema_experto import analizar_correo
-import json
 
 app = Flask(__name__)
 
@@ -160,10 +161,10 @@ def redactar():
                 # 3. Guardar el correo CON LA PROBABILIDAD
                 sql = """
                     INSERT INTO correos 
-                    (remitente_id, destinatario_id, asunto, cuerpo, es_spam, explicacion_json, probabilidad_spam) 
-                    VALUES (%s, %s, %s, %s, %s, %s, %s)
+                    (remitente_id, destinatario_id, fecha_envio, asunto, cuerpo, es_spam, explicacion_json, probabilidad_spam) 
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                 """
-                cursor.execute(sql, (remitente_id, destinatario_id, asunto, cuerpo, es_spam, explicacion_json_str, prob_spam))
+                cursor.execute(sql, (remitente_id, destinatario_id, datetime.now(), asunto, cuerpo, es_spam, explicacion_json_str, prob_spam))
             
             conexion.commit()
             flash("Correo enviado y analizado exitosamente.", "success")
@@ -330,12 +331,13 @@ def api_registrar_y_analizar_correos():
                 # --- 3. Guardar el correo en la BD con los resultados ---
                 sql = """
                     INSERT INTO correos 
-                    (remitente_id, destinatario_id, asunto, cuerpo, es_spam, explicacion_json, probabilidad_spam) 
-                    VALUES (%s, %s, %s, %s, %s, %s, %s)
+                    (remitente_id, destinatario_id, fecha_envio, asunto, cuerpo, es_spam, explicacion_json, probabilidad_spam) 
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                 """
                 cursor.execute(sql, (
                     remitente_id,
                     destinatario_id,
+                    datetime.now(),
                     asunto,
                     cuerpo,
                     analisis['es_spam'],
